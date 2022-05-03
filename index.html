@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ayala News</title>
+</head>
+<body>
+
+    <div class="logo"><img src="logo.png" alt=""></div>
+    <div id="menu">
+        <form name="formulario">
+        <div class="input"><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Marca.svg" alt=""><input type="checkbox" name="marca" id="fuente" value="marca" checked></div>
+        <div class="input"><img src="https://1000marcas.net/wp-content/uploads/2020/03/logo-The-Independent.png" alt=""><input type="checkbox" name="independent" id="fuente" value="independent"></div>
+        <div class="input"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/ANSA.svg/640px-ANSA.svg.png" alt=""><input type="checkbox" name="ansa" id="fuente" value="ansa"></div>
+        <div class="input"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/IGN_Entertainment_Logo.svg/640px-IGN_Entertainment_Logo.svg.png" alt=""><input type="checkbox" name="ign" id="fuente" value="ign"></div>
+        <div class="input"><img src="https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png" alt=""><input type="checkbox" name="globo" id="fuente" value="globo"></div>    
+        <div class="input"><input placeholder=" Buscador..." type="text" name="buscador" id="buscador"><button class="btncuscador" onclick="buscar(event)">Buscar</button></div>
+        </form>
+
+        <button class="button" onclick="filtros(event);">Actualizar fuentes</button>
+    </div>
+    <div id="noticias">
+
+    </div>
+    <div id="visible"></div>
+    <div class="paginas">
+        <button id="menos" onclick="pg(-1)">Anterior página</button>
+        <button id="más" onclick="pg(1)">Siguiente página</button>
+    </div>
+
+
+</body>
+</html>
